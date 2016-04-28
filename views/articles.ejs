@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body background="http://www.wyzu.cn/uploadfile/2013/0319/20130319010102143.jpg">
+    <h1><%= title %></h1>
+    <h4><%= articleTitle %></h4>
+    <p><%= content %></p>
+
+    <form  action="/articles/send" method="post">
+    <font style="text-shadow:0px 0px 15px #FF37FD;">標題</font>
+    <input type="text" id="articleTitle" name="articleTitle" />
+    <p></P>
+      <font style="text-shadow:0px 0px 15px #FF37FD;">內文</font>
+       <p></P>
+      <textarea id="content" name="content" rows="15" cols="50"></textarea>
+       <p></P>
+      <font style="text-shadow:0px 0px 15px #FF37FD;">發文者： <%= author %> </font>
+       <p></P>
+      <input type="submit" value="送出">
+    </form>
+    <br/>
+    <a href="/">回首頁<a>
+  </body>
+</html>
